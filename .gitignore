@@ -1,0 +1,9 @@
+# Node modules
+node_modules/
+
+# Build output
+android/app/build/
+ios/build/
+
+# VS Code settings
+.vscode/
