@@ -1,0 +1,271 @@
+2025-07-09 09:34:41:019 [Appium] Welcome to Appium v2.19.0
+2025-07-09 09:34:41:024 [Appium] Non-default server args:
+2025-07-09 09:34:41:026 [Appium] { address: '127.0.0.1', basePath: '/', port: 42759, relaxedSecurityEnabled: true }
+2025-07-09 09:34:41:027 [Appium] Enabling relaxed security. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+2025-07-09 09:34:41:027 [Appium] The autodetected Appium home path: /home/gems/LN JATAV/TestingDemo
+2025-07-09 09:34:41:028 [Appium] Attempting to load driver uiautomator2...
+2025-07-09 09:34:41:030 [Appium] Requiring driver at /home/gems/LN JATAV/TestingDemo/node_modules/appium-uiautomator2-driver/build/index.js
+2025-07-09 09:34:41:228 [Appium] AndroidUiautomator2Driver has been successfully loaded in 0.199s
+2025-07-09 09:34:41:245 [Appium] Appium REST http interface listener started on http://127.0.0.1:42759
+2025-07-09 09:34:41:246 [Appium] Available drivers:
+2025-07-09 09:34:41:246 [Appium]   - uiautomator2@4.2.5 (automationName 'UiAutomator2')
+2025-07-09 09:34:41:247 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+2025-07-09 09:34:42:559 [HTTP] --> POST /session {"capabilities":{"alwaysMatch":{"platformName":"Android","appium:platformVersion":"16","appium:deviceName":"Android Emulator","appium:app":"/home/gems/LN JATAV/TestingDemo/e2e/appium/android/app/build/outputs/apk/debug/app-debug.apk","appium:automationName":"UiAutomator2","appium:noReset":true,"appium:fullReset":false},"firstMatch":[{}]}}
+2025-07-09 09:34:42:561 [AppiumDriver@59fc] Calling AppiumDriver.createSession() with args: [null,null,{"alwaysMatch":{"platformName":"Android","appium:platformVersion":"16","appium:deviceName":"Android Emulator","appium:app":"/home/gems/LN JATAV/TestingDemo/e2e/appium/android/app/build/outputs/apk/debug/app-debug.apk","appium:automationName":"UiAutomator2","appium:noReset":true,"appium:fullReset":false},"firstMatch":[{}]}]
+2025-07-09 09:34:42:562 [AppiumDriver@59fc] Event 'newSessionRequested' logged at 1752053682562 (15:04:42 GMT+0530 (India Standard Time))
+2025-07-09 09:34:42:567 [Appium] Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'Android'
+2025-07-09 09:34:42:567 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2025-07-09 09:34:42:567 [Appium] Will require it at /home/gems/LN JATAV/TestingDemo/node_modules/appium-uiautomator2-driver
+2025-07-09 09:34:42:569 [Appium] Requiring driver at /home/gems/LN JATAV/TestingDemo/node_modules/appium-uiautomator2-driver/build/index.js
+2025-07-09 09:34:42:570 [AppiumDriver@59fc] Appium v2.19.0 creating new AndroidUiautomator2Driver (v4.2.5) session
+2025-07-09 09:34:42:571 [AppiumDriver@59fc] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2025-07-09 09:34:42:571 [AppiumDriver@59fc] Appium's BaseDriver version is 9.18.0
+2025-07-09 09:34:42:571 [AppiumDriver@59fc] AndroidUiautomator2Driver's BaseDriver version is 9.18.0
+2025-07-09 09:34:42:575 [AppiumDriver@59fc] Enabling relaxed security for this session as per the server configuration. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+2025-07-09 09:34:42:576 [38;5;-134m[AndroidUiautomator2Driver@dc1a] 
+2025-07-09 09:34:42:576 [38;5;-134m[AndroidUiautomator2Driver@dc1a] Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "platformName": "Android",
+    "appium:platformVersion": "16",
+    "appium:deviceName": "Android Emulator",
+    "appium:app": "/home/gems/LN JATAV/TestingDemo/e2e/appium/android/app/build/outputs/apk/debug/app-debug.apk",
+    "appium:automationName": "UiAutomator2",
+    "appium:noReset": true,
+    "appium:fullReset": false
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+2025-07-09 09:34:42:582 [3edb42c3][38;5;-134m[AndroidUiautomator2Driver@dc1a] Session created with session id: 3edb42c3-5023-4c7b-90b9-fb9ce347839a
+2025-07-09 09:34:42:593 [3edb42c3][ADB] Found 5 'build-tools' folders under '/home/gems/Android/Sdk' (newest first):
+2025-07-09 09:34:42:593 [3edb42c3][ADB]     /home/gems/Android/Sdk/build-tools/36.0.0
+2025-07-09 09:34:42:593 [3edb42c3][ADB]     /home/gems/Android/Sdk/build-tools/35.0.1
+2025-07-09 09:34:42:593 [3edb42c3][ADB]     /home/gems/Android/Sdk/build-tools/35.0.0
+2025-07-09 09:34:42:593 [3edb42c3][ADB]     /home/gems/Android/Sdk/build-tools/34.0.0
+2025-07-09 09:34:42:594 [3edb42c3][ADB]     /home/gems/Android/Sdk/build-tools/30.0.3
+2025-07-09 09:34:42:594 [3edb42c3][ADB] Using 'adb' from '/home/gems/Android/Sdk/platform-tools/adb'
+2025-07-09 09:34:42:595 [3edb42c3][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 start-server'
+2025-07-09 09:34:42:600 [3edb42c3][38;5;-134m[AndroidUiautomator2Driver@dc1a] Retrieving device list
+2025-07-09 09:34:42:600 [3edb42c3][ADB] Trying to find connected Android devices
+2025-07-09 09:34:42:601 [3edb42c3][ADB] Getting connected devices
+2025-07-09 09:34:42:605 [3edb42c3][ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2025-07-09 09:34:42:605 [3edb42c3][38;5;-134m[AndroidUiautomator2Driver@dc1a] Looking for a device with Android '16.0.0'
+2025-07-09 09:34:42:606 [3edb42c3][ADB] Setting device id to emulator-5554
+2025-07-09 09:34:42:606 [3edb42c3][ADB] Getting device platform version
+2025-07-09 09:34:42:606 [3edb42c3][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2025-07-09 09:34:42:656 [3edb42c3][ADB] Current device property 'ro.build.version.release': 16
+2025-07-09 09:34:42:657 [3edb42c3][38;5;-134m[AndroidUiautomator2Driver@dc1a] Using device: emulator-5554
+2025-07-09 09:34:42:658 [3edb42c3][ADB] Using 'adb' from '/home/gems/Android/Sdk/platform-tools/adb'
+2025-07-09 09:34:42:658 [3edb42c3][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 start-server'
+2025-07-09 09:34:42:662 [3edb42c3][ADB] Setting device id to emulator-5554
+2025-07-09 09:34:42:663 [3edb42c3][38;5;-134m[AndroidUiautomator2Driver@dc1a] Deleting UiAutomator2 session
+2025-07-09 09:34:42:664 [3edb42c3][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2025-07-09 09:34:42:666 [3edb42c3][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2025-07-09 09:34:42:688 [3edb42c3][ADB] Current device property 'ro.build.version.sdk': 36
+2025-07-09 09:34:42:689 [3edb42c3][ADB] Getting device platform version
+2025-07-09 09:34:42:689 [3edb42c3][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2025-07-09 09:34:42:693 [3edb42c3][ADB] Current device property 'ro.build.version.sdk': 36
+2025-07-09 09:34:42:693 [3edb42c3][ADB] Getting device platform version
+2025-07-09 09:34:42:693 [3edb42c3][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2025-07-09 09:34:42:713 [3edb42c3][ADB] Current device property 'ro.build.version.release': 16
+2025-07-09 09:34:42:714 [3edb42c3][ADB] Device API level: 36
+2025-07-09 09:34:42:714 [3edb42c3][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2025-07-09 09:34:42:723 [3edb42c3][ADB] Current device property 'ro.build.version.release': 16
+2025-07-09 09:34:42:723 [3edb42c3][ADB] Device API level: 36
+2025-07-09 09:34:42:723 [3edb42c3][38;5;-134m[AndroidUiautomator2Driver@dc1a] Restoring hidden api policy to the device default configuration
+2025-07-09 09:34:42:724 [3edb42c3][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2025-07-09 09:34:42:809 [3edb42c3][AppiumDriver@59fc] Event 'newSessionStarted' logged at 1752053682809 (15:04:42 GMT+0530 (India Standard Time))
+2025-07-09 09:34:42:819 [3edb42c3][AppiumDriver@59fc] Encountered internal error running command: Error: The application at '/home/gems/LN JATAV/TestingDemo/e2e/appium/android/app/build/outputs/apk/debug/app-debug.apk' does not exist or is not accessible
+    at /home/gems/LN JATAV/TestingDemo/node_modules/@appium/base-driver/lib/basedriver/helpers.js:253:13
+2025-07-09 09:34:42:836 [3edb42c3][HTTP] <-- POST /session 500 275 ms - 792 
+2025-07-09 09:34:42:848 [HTTP] --> POST /session {"capabilities":{"alwaysMatch":{"platformName":"Android","appium:platformVersion":"16","appium:deviceName":"Android Emulator","appium:app":"/home/gems/LN JATAV/TestingDemo/e2e/appium/android/app/build/outputs/apk/debug/app-debug.apk","appium:automationName":"UiAutomator2","appium:noReset":true,"appium:fullReset":false},"firstMatch":[{}]}}
+2025-07-09 09:34:42:849 [AppiumDriver@59fc] Calling AppiumDriver.createSession() with args: [null,null,{"alwaysMatch":{"platformName":"Android","appium:platformVersion":"16","appium:deviceName":"Android Emulator","appium:app":"/home/gems/LN JATAV/TestingDemo/e2e/appium/android/app/build/outputs/apk/debug/app-debug.apk","appium:automationName":"UiAutomator2","appium:noReset":true,"appium:fullReset":false},"firstMatch":[{}]}]
+2025-07-09 09:34:42:849 [AppiumDriver@59fc] Event 'newSessionRequested' logged at 1752053682849 (15:04:42 GMT+0530 (India Standard Time))
+2025-07-09 09:34:42:850 [Appium] Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'Android'
+2025-07-09 09:34:42:850 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2025-07-09 09:34:42:851 [Appium] Will require it at /home/gems/LN JATAV/TestingDemo/node_modules/appium-uiautomator2-driver
+2025-07-09 09:34:42:852 [Appium] Requiring driver at /home/gems/LN JATAV/TestingDemo/node_modules/appium-uiautomator2-driver/build/index.js
+2025-07-09 09:34:42:853 [AppiumDriver@59fc] Appium v2.19.0 creating new AndroidUiautomator2Driver (v4.2.5) session
+2025-07-09 09:34:42:853 [AppiumDriver@59fc] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2025-07-09 09:34:42:853 [AppiumDriver@59fc] Appium's BaseDriver version is 9.18.0
+2025-07-09 09:34:42:853 [AppiumDriver@59fc] AndroidUiautomator2Driver's BaseDriver version is 9.18.0
+2025-07-09 09:34:42:855 [AppiumDriver@59fc] Enabling relaxed security for this session as per the server configuration. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+2025-07-09 09:34:42:855 [38;5;-60m[AndroidUiautomator2Driver@e110] 
+2025-07-09 09:34:42:856 [38;5;-60m[AndroidUiautomator2Driver@e110] Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "platformName": "Android",
+    "appium:platformVersion": "16",
+    "appium:deviceName": "Android Emulator",
+    "appium:app": "/home/gems/LN JATAV/TestingDemo/e2e/appium/android/app/build/outputs/apk/debug/app-debug.apk",
+    "appium:automationName": "UiAutomator2",
+    "appium:noReset": true,
+    "appium:fullReset": false
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+2025-07-09 09:34:42:863 [ebc0e13e][38;5;-60m[AndroidUiautomator2Driver@e110] Session created with session id: ebc0e13e-6e22-4f10-9379-f9a3d519259a
+2025-07-09 09:34:42:864 [ebc0e13e][ADB] Using 'adb' from '/home/gems/Android/Sdk/platform-tools/adb'
+2025-07-09 09:34:42:865 [ebc0e13e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 start-server'
+2025-07-09 09:34:42:870 [ebc0e13e][38;5;-60m[AndroidUiautomator2Driver@e110] Retrieving device list
+2025-07-09 09:34:42:870 [ebc0e13e][ADB] Trying to find connected Android devices
+2025-07-09 09:34:42:870 [ebc0e13e][ADB] Getting connected devices
+2025-07-09 09:34:42:874 [ebc0e13e][ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2025-07-09 09:34:42:875 [ebc0e13e][38;5;-60m[AndroidUiautomator2Driver@e110] Looking for a device with Android '16.0.0'
+2025-07-09 09:34:42:875 [ebc0e13e][ADB] Setting device id to emulator-5554
+2025-07-09 09:34:42:875 [ebc0e13e][ADB] Getting device platform version
+2025-07-09 09:34:42:875 [ebc0e13e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2025-07-09 09:34:42:897 [ebc0e13e][ADB] Current device property 'ro.build.version.release': 16
+2025-07-09 09:34:42:898 [ebc0e13e][38;5;-60m[AndroidUiautomator2Driver@e110] Using device: emulator-5554
+2025-07-09 09:34:42:898 [ebc0e13e][ADB] Using 'adb' from '/home/gems/Android/Sdk/platform-tools/adb'
+2025-07-09 09:34:42:899 [ebc0e13e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 start-server'
+2025-07-09 09:34:42:903 [ebc0e13e][ADB] Setting device id to emulator-5554
+2025-07-09 09:34:42:904 [ebc0e13e][38;5;-60m[AndroidUiautomator2Driver@e110] Deleting UiAutomator2 session
+2025-07-09 09:34:42:904 [ebc0e13e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2025-07-09 09:34:42:907 [ebc0e13e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2025-07-09 09:34:42:929 [ebc0e13e][ADB] Current device property 'ro.build.version.sdk': 36
+2025-07-09 09:34:42:930 [ebc0e13e][ADB] Getting device platform version
+2025-07-09 09:34:42:930 [ebc0e13e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2025-07-09 09:34:42:934 [ebc0e13e][ADB] Current device property 'ro.build.version.sdk': 36
+2025-07-09 09:34:42:934 [ebc0e13e][ADB] Getting device platform version
+2025-07-09 09:34:42:934 [ebc0e13e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2025-07-09 09:34:42:955 [ebc0e13e][ADB] Current device property 'ro.build.version.release': 16
+2025-07-09 09:34:42:955 [ebc0e13e][ADB] Device API level: 36
+2025-07-09 09:34:42:955 [ebc0e13e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2025-07-09 09:34:42:958 [ebc0e13e][ADB] Current device property 'ro.build.version.release': 16
+2025-07-09 09:34:42:958 [ebc0e13e][ADB] Device API level: 36
+2025-07-09 09:34:42:959 [ebc0e13e][38;5;-60m[AndroidUiautomator2Driver@e110] Restoring hidden api policy to the device default configuration
+2025-07-09 09:34:42:959 [ebc0e13e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2025-07-09 09:34:43:038 [ebc0e13e][AppiumDriver@59fc] Event 'newSessionStarted' logged at 1752053683038 (15:04:43 GMT+0530 (India Standard Time))
+2025-07-09 09:34:43:039 [ebc0e13e][AppiumDriver@59fc] Encountered internal error running command: Error: The application at '/home/gems/LN JATAV/TestingDemo/e2e/appium/android/app/build/outputs/apk/debug/app-debug.apk' does not exist or is not accessible
+    at /home/gems/LN JATAV/TestingDemo/node_modules/@appium/base-driver/lib/basedriver/helpers.js:253:13
+2025-07-09 09:34:43:040 [ebc0e13e][HTTP] <-- POST /session 500 191 ms - 792 
+2025-07-09 09:34:43:544 [HTTP] --> POST /session {"capabilities":{"alwaysMatch":{"platformName":"Android","appium:platformVersion":"16","appium:deviceName":"Android Emulator","appium:app":"/home/gems/LN JATAV/TestingDemo/e2e/appium/android/app/build/outputs/apk/debug/app-debug.apk","appium:automationName":"UiAutomator2","appium:noReset":true,"appium:fullReset":false},"firstMatch":[{}]}}
+2025-07-09 09:34:43:544 [AppiumDriver@59fc] Calling AppiumDriver.createSession() with args: [null,null,{"alwaysMatch":{"platformName":"Android","appium:platformVersion":"16","appium:deviceName":"Android Emulator","appium:app":"/home/gems/LN JATAV/TestingDemo/e2e/appium/android/app/build/outputs/apk/debug/app-debug.apk","appium:automationName":"UiAutomator2","appium:noReset":true,"appium:fullReset":false},"firstMatch":[{}]}]
+2025-07-09 09:34:43:544 [AppiumDriver@59fc] Event 'newSessionRequested' logged at 1752053683544 (15:04:43 GMT+0530 (India Standard Time))
+2025-07-09 09:34:43:545 [Appium] Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'Android'
+2025-07-09 09:34:43:545 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2025-07-09 09:34:43:545 [Appium] Will require it at /home/gems/LN JATAV/TestingDemo/node_modules/appium-uiautomator2-driver
+2025-07-09 09:34:43:546 [Appium] Requiring driver at /home/gems/LN JATAV/TestingDemo/node_modules/appium-uiautomator2-driver/build/index.js
+2025-07-09 09:34:43:547 [AppiumDriver@59fc] Appium v2.19.0 creating new AndroidUiautomator2Driver (v4.2.5) session
+2025-07-09 09:34:43:547 [AppiumDriver@59fc] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2025-07-09 09:34:43:547 [AppiumDriver@59fc] Appium's BaseDriver version is 9.18.0
+2025-07-09 09:34:43:548 [AppiumDriver@59fc] AndroidUiautomator2Driver's BaseDriver version is 9.18.0
+2025-07-09 09:34:43:549 [AppiumDriver@59fc] Enabling relaxed security for this session as per the server configuration. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+2025-07-09 09:34:43:549 [38;5;-159m[AndroidUiautomator2Driver@73ce] 
+2025-07-09 09:34:43:549 [38;5;-159m[AndroidUiautomator2Driver@73ce] Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "platformName": "Android",
+    "appium:platformVersion": "16",
+    "appium:deviceName": "Android Emulator",
+    "appium:app": "/home/gems/LN JATAV/TestingDemo/e2e/appium/android/app/build/outputs/apk/debug/app-debug.apk",
+    "appium:automationName": "UiAutomator2",
+    "appium:noReset": true,
+    "appium:fullReset": false
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+2025-07-09 09:34:43:552 [55e7ed87][38;5;-159m[AndroidUiautomator2Driver@73ce] Session created with session id: 55e7ed87-49da-4944-9c7f-46e4adb90f9a
+2025-07-09 09:34:43:553 [55e7ed87][ADB] Using 'adb' from '/home/gems/Android/Sdk/platform-tools/adb'
+2025-07-09 09:34:43:554 [55e7ed87][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 start-server'
+2025-07-09 09:34:43:557 [55e7ed87][38;5;-159m[AndroidUiautomator2Driver@73ce] Retrieving device list
+2025-07-09 09:34:43:557 [55e7ed87][ADB] Trying to find connected Android devices
+2025-07-09 09:34:43:557 [55e7ed87][ADB] Getting connected devices
+2025-07-09 09:34:43:561 [55e7ed87][ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2025-07-09 09:34:43:561 [55e7ed87][38;5;-159m[AndroidUiautomator2Driver@73ce] Looking for a device with Android '16.0.0'
+2025-07-09 09:34:43:561 [55e7ed87][ADB] Setting device id to emulator-5554
+2025-07-09 09:34:43:562 [55e7ed87][ADB] Getting device platform version
+2025-07-09 09:34:43:562 [55e7ed87][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2025-07-09 09:34:43:590 [55e7ed87][ADB] Current device property 'ro.build.version.release': 16
+2025-07-09 09:34:43:591 [55e7ed87][38;5;-159m[AndroidUiautomator2Driver@73ce] Using device: emulator-5554
+2025-07-09 09:34:43:591 [55e7ed87][ADB] Using 'adb' from '/home/gems/Android/Sdk/platform-tools/adb'
+2025-07-09 09:34:43:592 [55e7ed87][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 start-server'
+2025-07-09 09:34:43:595 [55e7ed87][ADB] Setting device id to emulator-5554
+2025-07-09 09:34:43:596 [55e7ed87][38;5;-159m[AndroidUiautomator2Driver@73ce] Deleting UiAutomator2 session
+2025-07-09 09:34:43:596 [55e7ed87][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2025-07-09 09:34:43:598 [55e7ed87][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2025-07-09 09:34:43:623 [55e7ed87][ADB] Current device property 'ro.build.version.sdk': 36
+2025-07-09 09:34:43:623 [55e7ed87][ADB] Getting device platform version
+2025-07-09 09:34:43:623 [55e7ed87][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2025-07-09 09:34:43:626 [55e7ed87][ADB] Current device property 'ro.build.version.sdk': 36
+2025-07-09 09:34:43:626 [55e7ed87][ADB] Getting device platform version
+2025-07-09 09:34:43:626 [55e7ed87][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2025-07-09 09:34:43:646 [55e7ed87][ADB] Current device property 'ro.build.version.release': 16
+2025-07-09 09:34:43:646 [55e7ed87][ADB] Device API level: 36
+2025-07-09 09:34:43:646 [55e7ed87][38;5;-159m[AndroidUiautomator2Driver@73ce] Restoring hidden api policy to the device default configuration
+2025-07-09 09:34:43:646 [55e7ed87][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2025-07-09 09:34:43:649 [55e7ed87][ADB] Current device property 'ro.build.version.release': 16
+2025-07-09 09:34:43:649 [55e7ed87][ADB] Device API level: 36
+2025-07-09 09:34:43:649 [55e7ed87][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2025-07-09 09:34:43:754 [55e7ed87][AppiumDriver@59fc] Event 'newSessionStarted' logged at 1752053683754 (15:04:43 GMT+0530 (India Standard Time))
+2025-07-09 09:34:43:755 [55e7ed87][AppiumDriver@59fc] Encountered internal error running command: Error: The application at '/home/gems/LN JATAV/TestingDemo/e2e/appium/android/app/build/outputs/apk/debug/app-debug.apk' does not exist or is not accessible
+    at /home/gems/LN JATAV/TestingDemo/node_modules/@appium/base-driver/lib/basedriver/helpers.js:253:13
+2025-07-09 09:34:43:756 [55e7ed87][HTTP] <-- POST /session 500 212 ms - 792 
+2025-07-09 09:34:44:761 [HTTP] --> POST /session {"capabilities":{"alwaysMatch":{"platformName":"Android","appium:platformVersion":"16","appium:deviceName":"Android Emulator","appium:app":"/home/gems/LN JATAV/TestingDemo/e2e/appium/android/app/build/outputs/apk/debug/app-debug.apk","appium:automationName":"UiAutomator2","appium:noReset":true,"appium:fullReset":false},"firstMatch":[{}]}}
+2025-07-09 09:34:44:761 [AppiumDriver@59fc] Calling AppiumDriver.createSession() with args: [null,null,{"alwaysMatch":{"platformName":"Android","appium:platformVersion":"16","appium:deviceName":"Android Emulator","appium:app":"/home/gems/LN JATAV/TestingDemo/e2e/appium/android/app/build/outputs/apk/debug/app-debug.apk","appium:automationName":"UiAutomator2","appium:noReset":true,"appium:fullReset":false},"firstMatch":[{}]}]
+2025-07-09 09:34:44:762 [AppiumDriver@59fc] Event 'newSessionRequested' logged at 1752053684762 (15:04:44 GMT+0530 (India Standard Time))
+2025-07-09 09:34:44:762 [Appium] Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'Android'
+2025-07-09 09:34:44:763 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2025-07-09 09:34:44:763 [Appium] Will require it at /home/gems/LN JATAV/TestingDemo/node_modules/appium-uiautomator2-driver
+2025-07-09 09:34:44:765 [Appium] Requiring driver at /home/gems/LN JATAV/TestingDemo/node_modules/appium-uiautomator2-driver/build/index.js
+2025-07-09 09:34:44:766 [AppiumDriver@59fc] Appium v2.19.0 creating new AndroidUiautomator2Driver (v4.2.5) session
+2025-07-09 09:34:44:766 [AppiumDriver@59fc] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2025-07-09 09:34:44:766 [AppiumDriver@59fc] Appium's BaseDriver version is 9.18.0
+2025-07-09 09:34:44:767 [AppiumDriver@59fc] AndroidUiautomator2Driver's BaseDriver version is 9.18.0
+2025-07-09 09:34:44:767 [AppiumDriver@59fc] Enabling relaxed security for this session as per the server configuration. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+2025-07-09 09:34:44:768 [38;5;-177m[AndroidUiautomator2Driver@c333] 
+2025-07-09 09:34:44:768 [38;5;-177m[AndroidUiautomator2Driver@c333] Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "platformName": "Android",
+    "appium:platformVersion": "16",
+    "appium:deviceName": "Android Emulator",
+    "appium:app": "/home/gems/LN JATAV/TestingDemo/e2e/appium/android/app/build/outputs/apk/debug/app-debug.apk",
+    "appium:automationName": "UiAutomator2",
+    "appium:noReset": true,
+    "appium:fullReset": false
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+2025-07-09 09:34:44:772 [2f4b1a0e][38;5;-177m[AndroidUiautomator2Driver@c333] Session created with session id: 2f4b1a0e-28ea-4dc5-89ec-d4491ea3ebb6
+2025-07-09 09:34:44:772 [2f4b1a0e][ADB] Using 'adb' from '/home/gems/Android/Sdk/platform-tools/adb'
+2025-07-09 09:34:44:773 [2f4b1a0e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 start-server'
+2025-07-09 09:34:44:776 [2f4b1a0e][38;5;-177m[AndroidUiautomator2Driver@c333] Retrieving device list
+2025-07-09 09:34:44:776 [2f4b1a0e][ADB] Trying to find connected Android devices
+2025-07-09 09:34:44:777 [2f4b1a0e][ADB] Getting connected devices
+2025-07-09 09:34:44:780 [2f4b1a0e][ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2025-07-09 09:34:44:780 [2f4b1a0e][38;5;-177m[AndroidUiautomator2Driver@c333] Looking for a device with Android '16.0.0'
+2025-07-09 09:34:44:781 [2f4b1a0e][ADB] Setting device id to emulator-5554
+2025-07-09 09:34:44:781 [2f4b1a0e][ADB] Getting device platform version
+2025-07-09 09:34:44:781 [2f4b1a0e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2025-07-09 09:34:44:804 [2f4b1a0e][ADB] Current device property 'ro.build.version.release': 16
+2025-07-09 09:34:44:804 [2f4b1a0e][38;5;-177m[AndroidUiautomator2Driver@c333] Using device: emulator-5554
+2025-07-09 09:34:44:805 [2f4b1a0e][ADB] Using 'adb' from '/home/gems/Android/Sdk/platform-tools/adb'
+2025-07-09 09:34:44:805 [2f4b1a0e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 start-server'
+2025-07-09 09:34:44:808 [2f4b1a0e][ADB] Setting device id to emulator-5554
+2025-07-09 09:34:44:809 [2f4b1a0e][38;5;-177m[AndroidUiautomator2Driver@c333] Deleting UiAutomator2 session
+2025-07-09 09:34:44:809 [2f4b1a0e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2025-07-09 09:34:44:811 [2f4b1a0e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2025-07-09 09:34:44:831 [2f4b1a0e][ADB] Current device property 'ro.build.version.sdk': 36
+2025-07-09 09:34:44:831 [2f4b1a0e][ADB] Getting device platform version
+2025-07-09 09:34:44:831 [2f4b1a0e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2025-07-09 09:34:44:834 [2f4b1a0e][ADB] Current device property 'ro.build.version.sdk': 36
+2025-07-09 09:34:44:834 [2f4b1a0e][ADB] Getting device platform version
+2025-07-09 09:34:44:835 [2f4b1a0e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2025-07-09 09:34:44:856 [2f4b1a0e][ADB] Current device property 'ro.build.version.release': 16
+2025-07-09 09:34:44:857 [2f4b1a0e][ADB] Device API level: 36
+2025-07-09 09:34:44:857 [2f4b1a0e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2025-07-09 09:34:44:860 [2f4b1a0e][ADB] Current device property 'ro.build.version.release': 16
+2025-07-09 09:34:44:860 [2f4b1a0e][ADB] Device API level: 36
+2025-07-09 09:34:44:860 [2f4b1a0e][38;5;-177m[AndroidUiautomator2Driver@c333] Restoring hidden api policy to the device default configuration
+2025-07-09 09:34:44:861 [2f4b1a0e][ADB] Running '/home/gems/Android/Sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2025-07-09 09:34:44:946 [2f4b1a0e][AppiumDriver@59fc] Event 'newSessionStarted' logged at 1752053684946 (15:04:44 GMT+0530 (India Standard Time))
+2025-07-09 09:34:44:947 [2f4b1a0e][AppiumDriver@59fc] Encountered internal error running command: Error: The application at '/home/gems/LN JATAV/TestingDemo/e2e/appium/android/app/build/outputs/apk/debug/app-debug.apk' does not exist or is not accessible
+    at /home/gems/LN JATAV/TestingDemo/node_modules/@appium/base-driver/lib/basedriver/helpers.js:253:13
+2025-07-09 09:34:44:947 [2f4b1a0e][HTTP] <-- POST /session 500 186 ms - 792 
+2025-07-09 09:34:45:442 [Appium] Received SIGTERM - shutting down
