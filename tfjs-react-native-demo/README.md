@@ -57,28 +57,89 @@ Scan the QR code with the Expo Go app on your mobile device.
 
 
 📌 Permissions
-Required permissions (declared in app.json):
+Required permissions declared in app.json and requested via Expo modules:
 
-Camera access
+Camera Access (expo-camera)
+Enables users to capture photos for face detection or object recognition.
 
-Media library access
+Media Library Access (expo-media-library)
+Allows the app to pick images from the device's photo gallery for inference.
 
-File system access (read/write)
+File System Access (expo-file-system)
+Used to read model files, cache assets, and potentially save processed outputs (e.g., segmented images or inference results).
+
+GLView Support (expo-gl, expo-gl-cpp)
+Enables TensorFlow.js to use GPU acceleration for efficient model inference via the WebGL backend.
 
 🧪 How it Works
-Loads the TensorFlow model on device using tfjs-react-native
+Your app processes images and text on-device using TensorFlow.js with GPU-accelerated WebGL. Here's a breakdown of how it works:
 
-Converts images to tensors using decodeJpeg from @tensorflow/tfjs-react-native
+1. Model Initialization
+Uses tfjs-react-native to load and initialize TensorFlow.js.
 
-For text classification, uses Universal Sentence Encoder to get 512-d embeddings and feeds it to a basic dense classifier
+Automatically registers and sets @tensorflow/tfjs-backend-webgl as the backend for GPU acceleration.
 
-Detection and segmentation results are visualized using react-native-svg
+Loads models either:
+
+From local file paths using bundleResourceIO
+
+From URLs if hosted publicly
+
+2. Image Processing Pipelines
+Face Detection (BlazeFace)
+
+Loads a pre-trained face detector from @tensorflow-models/blazeface.
+
+Takes an image (captured or selected), decodes it into a tensor (decodeJpeg).
+
+Runs model.estimateFaces() to detect faces.
+
+Renders boxes and keypoints on the image using react-native-svg.
+
+Object Detection (COCO-SSD)
+
+Loads @tensorflow-models/coco-ssd.
+
+Converts selected image to tensor and runs model.detect().
+
+Displays labels and bounding boxes for detected objects.
+
+Image Segmentation (BodyPix)
+
+Loads the @tensorflow-models/body-pix model.
+
+Performs person segmentation on the selected image.
+
+Applies transparency and overlays mask using Canvas or OpenGL.
+
+3. Text Classification
+Uses @tensorflow-models/universal-sentence-encoder to extract embeddings from a sentence.
+
+Passes the 512-d vector to a simple classifier model (likely implemented manually using tf.layers).
+
+Outputs category (e.g., sentiment like positive, negative, neutral).
+
+4. Rendering
+Results are visualized using:
+
+react-native-svg for bounding boxes and overlays.
+
+GL/Canvas where applicable for pixel masks (segmentation).
+
+React Native UI for label/text output.
 
 🧱 Future Improvements
-Add real-time camera stream processing
+✅ Real-time Camera Stream Processing
+Implement continuous frame capture using expo-camera for live face or object detection.
 
-Train and load custom .tflite models
+⏳ Improve Text Classifier
+Enhance the basic classifier using real, labeled text data. Explore multi-class or multi-label scenarios (e.g., spam, intent detection).
 
-Improve sentiment classification with real training data
+⏳ Batch Inference & Analysis
+Allow users to select multiple images and run inference on all (e.g., process gallery images in sequence).
 
-Export results or share images with masks
+⏳ Export and Share Results
+Save segmented or annotated images and share them via system share sheet or email.
+
+⏳ Pose Estimation or Multi-person Detection
+Extend BodyPix or integrate MoveNet to detect body parts and keypoints for multiple users.
